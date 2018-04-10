@@ -14,6 +14,8 @@ if (NOT _OBJ_EXT STREQUAL ".o")
 endif (NOT _OBJ_EXT STREQUAL ".o")
 
 file(GLOB_RECURSE _OBJ_EXCLUDED
+     ${WEBRTC_OUTPUT_DIR}/obj/third_party/boringssl/*${_OBJ_EXT}                                                                                                                               
+     ${WEBRTC_OUTPUT_DIR}/obj/third_party/libsrtp/libsrtp/*${_OBJ_EXT}                                                                                                                         
      ${WEBRTC_OUTPUT_DIR}/obj/third_party/yasm/gen*/*${_OBJ_EXT}
      ${WEBRTC_OUTPUT_DIR}/obj/third_party/yasm/re2c/*${_OBJ_EXT}
      ${WEBRTC_OUTPUT_DIR}/obj/third_party/yasm/yasm/*${_OBJ_EXT}
